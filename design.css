@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+.navbar{
+    box-shadow: 0 0 2px 0;
+    background-color: rgb(92, 221, 241);
+    border-radius: 0 0 5px 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.navdiv{
+    display: flex;
+    height: 13vh;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.one{
+    padding-left: 15px;
+}
+.navli{
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+}
+li a{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+   
+}
+.sign{
+    background-color: rgb(87, 11, 72);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    width:80px;
+    height:30px;
+}
+button:hover{
+    transform: scale(1.2);
+    transition:0.5s;
+}
+.maindiv{
+    height:100vh;
+    background-color: white;
+}
+.quizdiv{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px; 
+}
+.ulinput{
+list-style:none;
+}
+.inputli{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+.label{
+  padding-left: 22px;
+}
+.btn{
+    padding-top: 20px;
+   display: flex;
+   justify-content:space-around;
+   margin-left:50px;
+   margin-right:50x;
+}
+.next{
+    margin-left:200px;
+    border: 0px solid black;
+    font-size:20px;
+    width: 80px;
+    color:white;
+    border-radius: 5px;
+    background-color: rgb(87, 11, 72);
+
+}
