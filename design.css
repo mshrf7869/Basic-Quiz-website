@@ -43,7 +43,7 @@ li a{
 }
 button:hover{
     transform: scale(1.2);
-    transition:0.5s;
+    transition:0.2s;
 }
 .maindiv{
     height:100vh;
@@ -62,18 +62,22 @@ list-style:none;
     padding-bottom: 20px;
     padding-right: 10px;
 }
+.optiondiv{
+    padding-top:10px ;
+    padding-bottom: 30px;
+}
 .label{
   padding-left: 22px;
+  font-size: 20px;
 }
-.btn{
+.btndiv{
     padding-top: 20px;
    display: flex;
-   justify-content:space-around;
-   margin-left:50px;
-   margin-right:50x;
+   justify-content:flex-start;
+   margin-left:250px;
 }
 .next{
-    margin-left:200px;
+    margin-left:20px;
     border: 0px solid black;
     font-size:20px;
     width: 80px;
