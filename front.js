@@ -36,7 +36,8 @@ const quizData = [
 const Ele= document.querySelectorAll(".answer");
 const [queEle, option_1, option_2, option_3, option_4]=document.querySelectorAll("#question, #option_1, #option_2, #option_3, #option_4");
 
-const subbtn=document.querySelector(".next");
+const subbtn=document.querySelector("#nxt");
+const prevbtn=document.querySelector(".prev");
 
 let currentQuiz=0;
 const score=0;
@@ -47,20 +48,26 @@ const loadQuiz=()=>{
     const{question,options}=quizData[currentQuiz];
     queEle.innerText=question;
 
-    options.forEach((currOpt,index)=> window[`option_${index+1}`].innerText=currOpt)
-    
+    options.forEach((elem,index)=> window[`option_${index+1}`].innerText=elem) 
 };
 
 loadQuiz();
 
 const deselectaAns=()=>{
- return Ele.forEach((currentEle)=>currentEle.checkek=false);
+ return Ele.forEach((currentEle)=>currentEle.checked=false);
 };
 
+  
 subbtn.addEventListener("click",()=>{
-   currentQuiz++;
+  currentQuiz++;
    if(currentQuiz<quizData.length){
     deselectaAns();
     loadQuiz();
    }
+   else if(currentQuiz>=quizData.length){
+    subbtn.innerText='Submit';
+    subbtn.style.background='rgb(92, 221, 241)';
+   }
 });
+
+
